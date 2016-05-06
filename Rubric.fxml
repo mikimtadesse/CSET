@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cset.RubricController">
+  <children>
+    <GridPane layoutX="0.0" layoutY="0.0" prefHeight="96.0" prefWidth="600.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <GridPane blendMode="SRC_OVER" cache="false" cacheHint="QUALITY" depthTest="ENABLE" focusTraversable="false" gridLinesVisible="true" layoutX="11.0" layoutY="8.0" mouseTransparent="false" prefHeight="346.0" prefWidth="565.0" visible="true">
+      <children>
+        <ToggleButton mnemonicParsing="false" prefWidth="290.0" text="Oral Communication/Public Speaking" textFill="#292929" textOverrun="ELLIPSIS" underline="false" wrapText="false" GridPane.columnIndex="0" GridPane.rowIndex="2">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </ToggleButton>
+        <ToggleButton mnemonicParsing="false" prefWidth="290.0" text="Design" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <ToggleButton mnemonicParsing="false" prefWidth="290.0" text="Coding" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <ToggleButton mnemonicParsing="false" prefHeight="22.0" prefWidth="290.0" text="Correctness" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Documentation" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Critical Thinking" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Writen Communication" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Independent Work/Research" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Team Work" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Class Activity/Participation" GridPane.columnIndex="0" GridPane.rowIndex="11" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Organization" GridPane.columnIndex="0" GridPane.rowIndex="12" />
+        <ToggleButton mnemonicParsing="false" prefHeight="21.0" prefWidth="290.0000999999975" text="Creativity" GridPane.columnIndex="0" GridPane.rowIndex="13" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <Label prefHeight="21.0" prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+        <Label prefWidth="273.0" text="" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+        <Label prefWidth="273.0001220703125" text="" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+        <TextField prefWidth="200.0" promptText="Type in a 5 character rubric id for this assignment" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="25.0" prefWidth="288.0" text="Concepts/Areas of focus " GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <font>
+            <Font name="System Bold" size="16.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" prefWidth="290.0" text="Rubric ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" prefWidth="290.0" text="Status" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="28.0" minHeight="10.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Button layoutX="440.0" layoutY="366.0" mnemonicParsing="false" prefWidth="64.0" text="Save" />
+    <Button layoutX="513.0" layoutY="365.0" mnemonicParsing="false" prefHeight="22.0001220703125" prefWidth="64.0" text="Cancel" />
+  </children>
+</AnchorPane>

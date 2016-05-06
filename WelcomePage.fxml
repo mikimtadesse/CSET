@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cset.WelcomePageController">
+  <children>
+    <AnchorPane id="Content" layoutX="14.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="572.0">
+      <children>
+        <Label fx:id="welcometxt" layoutX="218.0" layoutY="13.0" prefHeight="26.0" prefWidth="137.0" text="Welcome to Cset">
+          <font>
+            <Font name="Californian FB" size="18.0" />
+          </font>
+        </Label>
+        <Button fx:id="logout" layoutX="497.0" layoutY="18.0" mnemonicParsing="false" onAction="#Signoff" text="Log out" />
+        <Button fx:id="createprogram" layoutX="177.0" layoutY="128.0" mnemonicParsing="false" onAction="#CreateProgram" prefHeight="41.0" prefWidth="218.0" text="Create Program" />
+        <Button fx:id="createcourse" layoutX="177.0" layoutY="184.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="218.0" text="Create Course" />
+        <Button fx:id="createsection" layoutX="177.0" layoutY="242.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="218.0" text="Create Section" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>

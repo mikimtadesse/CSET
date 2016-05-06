@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cset.LoginController">
+  <children>
+    <ImageView fx:id="image" blendMode="MULTIPLY" cache="true" depthTest="INHERIT" disable="false" fitHeight="472.33331298828125" fitWidth="472.33331298828125" focusTraversable="false" layoutX="2.0" layoutY="0.0" mouseTransparent="false" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../Jebena.jpg" />
+      </image>
+    </ImageView>
+    <TextField id="usernametxtfield" fx:id="usernametxt" layoutX="152.0" layoutY="215.0" onKeyPressed="#OnEnterKey" prefWidth="200.0" promptText="Username" />
+    <PasswordField fx:id="passwordtxt" layoutX="152.0" layoutY="255.0" onKeyPressed="#OnEnterKey" prefWidth="200.0" promptText="Password" />
+    <Button layoutX="207.0" layoutY="294.0" mnemonicParsing="false" onAction="#Signin" onKeyPressed="#OnEnterKey" prefHeight="29.0" prefWidth="68.0" text="Login">
+      <effect>
+        <ColorAdjust brightness="-0.01526717557251922" contrast="0.10687022900763354" saturation="-0.4122137404580153" />
+      </effect>
+      <font>
+        <Font name="Lucida Calligraphy Italic" size="12.0" />
+      </font>
+      <textFill>
+        <Color blue="0.161" green="0.161" red="0.639" fx:id="x1" />
+      </textFill>
+    </Button>
+    <Label fx:id="message" alignment="CENTER" blendMode="HARD_LIGHT" contentDisplay="TEXT_ONLY" labelFor="$usernametxt" layoutX="60.0" layoutY="47.0" prefHeight="110.0" prefWidth="363.0" text="" textAlignment="JUSTIFY" textFill="#ff4545" underline="false" wrapText="false">
+      <effect>
+        <DropShadow color="#b80000" height="7.464285714285716" radius="3.3898809523809526" spread="0.5158730158730158" width="8.095238095238095" />
+      </effect>
+      <font>
+        <Font name="Times New Roman" size="24.0" />
+      </font>
+    </Label>
+    <Button layoutX="373.0" layoutY="431.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="29.000099999997474" prefWidth="84.0" text="Sign Up?" textFill="$x1">
+      <effect>
+        <ColorAdjust contrast="0.061068702290076216" saturation="-0.10687022900763354" />
+      </effect>
+      <font>
+        <Font name="System Italic" size="12.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>

@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://session.cset.edu/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://session.cset.edu/">
+
+<xs:element name="Authenthicate" type="tns:Authenthicate"/>
+
+<xs:element name="AuthenthicateResponse" type="tns:AuthenthicateResponse"/>
+
+<xs:element name="create" type="tns:create"/>
+
+<xs:element name="createResponse" type="tns:createResponse"/>
+
+<xs:element name="deleteUser" type="tns:deleteUser"/>
+
+<xs:element name="deleteUserResponse" type="tns:deleteUserResponse"/>
+
+<xs:element name="edit" type="tns:edit"/>
+
+<xs:element name="editResponse" type="tns:editResponse"/>
+
+<xs:element name="find" type="tns:find"/>
+
+<xs:element name="findResponse" type="tns:findResponse"/>
+
+<xs:element name="registerUser" type="tns:registerUser"/>
+
+<xs:element name="registerUserResponse" type="tns:registerUserResponse"/>
+
+<xs:element name="remove" type="tns:remove"/>
+
+<xs:element name="removeResponse" type="tns:removeResponse"/>
+
+<xs:element name="users" type="tns:users"/>
+
+<xs:complexType name="edit">
+<xs:sequence>
+<xs:element name="arg0" type="tns:users" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="users">
+<xs:sequence>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+<xs:element name="firstName" type="xs:string" minOccurs="0"/>
+<xs:element name="lastName" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="find">
+<xs:sequence>
+<xs:element name="arg0" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:users" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="create">
+<xs:sequence>
+<xs:element name="arg0" type="tns:users" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteUser">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteUserResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="registerUser">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="registerUserResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:users" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Authenthicate">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="AuthenthicateResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="remove">
+<xs:sequence>
+<xs:element name="arg0" type="tns:users" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removeResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
